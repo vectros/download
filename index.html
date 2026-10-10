@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download VectrOS</title>
+<meta name="description" content="Download VectrOS 2026.10.10.1: the Aeris desktop with AI agents in the kernel.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #010513; --panel: #0a1024; --line: #1b2442; --ink: #e6ecf8; --ink-2: #a9b4cc;
+    --ink-3: #7c88a3; --accent: #4a90ff; --accent-soft: #cdebfd; --code: #060b1c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 Inter, system-ui, sans-serif; }
+  a { color: var(--accent-soft); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 32px 0 8px; }
+  header img { height: 44px; display: block; }
+  .hero { padding: 48px 0 32px; }
+  h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 0 0 16px; font-weight: 600; letter-spacing: -0.02em; }
+  h1 span { background: linear-gradient(90deg, var(--accent-soft), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lede { color: var(--ink-2); font-size: 18px; max-width: 640px; margin: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin: 24px 0; }
+  .card h2 { margin: 0 0 4px; font-size: 22px; font-weight: 600; }
+  h2 { font-size: 22px; font-weight: 600; margin: 48px 0 12px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 20px 0 6px; }
+  .meta { color: var(--ink-3); font-size: 14px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 8px; }
+  .button { display: inline-block; padding: 12px 20px; border-radius: 10px; border: 1px solid var(--line);
+            color: var(--ink); text-decoration: none; font-weight: 500; }
+  .button.primary { background: linear-gradient(90deg, #6aa8ff, var(--accent)); border-color: transparent; color: #020713; }
+  .button .size { opacity: .7; font-weight: 400; margin-left: 6px; }
+  .button:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--accent-soft); outline-offset: 2px; }
+  pre { background: var(--code); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 8px 0; }
+  /* Commands wrap instead of scrolling: long file names on narrow screens. */
+  pre code { white-space: pre-wrap; word-break: break-all; }
+  .fpr { white-space: nowrap; }
+  code { font: 14px/1.5 "JetBrains Mono", ui-monospace, monospace; color: var(--ink); }
+  p code, li code { background: var(--code); padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+  details { margin: 6px 0; }
+  summary { cursor: pointer; color: var(--ink-2); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 8px 0; }
+  .fact { border-top: 1px solid var(--line); padding-top: 12px; }
+  .fact strong { display: block; font-weight: 600; }
+  .fact span { color: var(--ink-2); font-size: 15px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .sha { word-break: break-all; }
+  .mirrors { margin: 4px 0 0; }
+  footer { border-top: 1px solid var(--line); margin-top: 56px; padding: 24px 0 48px; color: var(--ink-3); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><img src="assets/wordmark.png" alt="VectrOS"></header>
+
+<section class="hero">
+  <h1>A desktop with <span>AI agents in the kernel</span>.</h1>
+  <p class="lede">VectrOS runs the Aeris desktop on Hyprland, with AIOS: agents that the kernel
+    schedules, limits and holds for your approval before they act.</p>
+</section>
+
+<section class="card" aria-labelledby="dl">
+  <h2 id="dl">VectrOS 2026.10.10.1</h2>
+  <p class="meta">Live ISO · x86_64 · UEFI · 3.0 GB · released 2026-10-10
+    · <a href="https://github.com/vectros/download/releases/tag/2026.10.10.1">release notes</a></p>
+  
+        <div class="buttons"><a class="button primary" href="https://github.com/vectros/download/releases/download/2026.10.10.1/vectros-2026.10.10.1-x86_64.iso.part00">Part 1 of 2 <span class="size">2.0 GB</span></a><a class="button" href="https://github.com/vectros/download/releases/download/2026.10.10.1/vectros-2026.10.10.1-x86_64.iso.part01">Part 2 of 2 <span class="size">1.1 GB</span></a></div>
+        <p class="meta">GitHub serves files of at most 2 GiB, so the ISO comes in 2 parts.
+          Download all of them into one folder and join them:</p>
+        <div class="tabs">
+          <details open><summary>Linux and macOS</summary>
+            <pre><code>cat vectros-2026.10.10.1-x86_64.iso.part00 vectros-2026.10.10.1-x86_64.iso.part01 &gt; vectros-2026.10.10.1-x86_64.iso</code></pre></details>
+          <details><summary>Windows (Command Prompt)</summary>
+            <pre><code>copy /b vectros-2026.10.10.1-x86_64.iso.part00 + vectros-2026.10.10.1-x86_64.iso.part01 vectros-2026.10.10.1-x86_64.iso</code></pre></details>
+        </div>
+  <p class="meta">Then <a href="#verify">verify it</a> and <a href="#usb">write it to a USB stick</a>.</p>
+</section>
+
+<div class="facts">
+  <div class="fact"><strong>Agents you approve</strong><span>Tool calls an agent may not make alone wait in Aeris until you allow them.</span></div>
+  <div class="fact"><strong>Updates you can undo</strong><span>A snapshot before every update; <code>vectros-rollback</code> brings the last one back.</span></div>
+  <div class="fact"><strong>Encrypted if you want</strong><span>The installer can encrypt the disk; your password unlocks it.</span></div>
+</div>
+
+<h2 id="verify">Verify the download</h2>
+<p>Every release has a <code>CHECKSUM</code> file signed with the VectrOS key, like Fedora's. Check the signature,
+  then the ISO. Put both files next to the ISO.</p>
+<div class="buttons">
+  <a class="button" href="https://github.com/vectros/download/releases/download/2026.10.10.1/VectrOS-2026.10.10.1-x86_64-CHECKSUM">VectrOS-2026.10.10.1-x86_64-CHECKSUM</a>
+  <a class="button" href="vectros.gpg">VectrOS signing key</a>
+</div>
+<pre><code>gpgv --keyring ./vectros.gpg VectrOS-2026.10.10.1-x86_64-CHECKSUM
+sha256sum --ignore-missing -c VectrOS-2026.10.10.1-x86_64-CHECKSUM</code></pre>
+<p class="meta">The first command must say <em>Good signature from "VectrOS package signing"</em>; the second,
+  <code>vectros-2026.10.10.1-x86_64.iso: OK</code> (it also warns about the signature's lines; that is expected). The key's fingerprint is
+  <code class="fpr">6287</code> <code class="fpr">B50E</code> <code class="fpr">3F78</code> <code class="fpr">BA61</code> <code class="fpr">A4E2</code> <code class="fpr">8D19</code> <code class="fpr">6ADA</code> <code class="fpr">AC27</code> <code class="fpr">044C</code> <code class="fpr">C53D</code>.</p>
+<details><summary>SHA-256 of vectros-2026.10.10.1-x86_64.iso</summary><pre><code class="sha">44e794c47dfdfa13a0a74c0db7618c564df83d6691eb87089a777d656fc65b67</code></pre></details>
+<details><summary>Windows</summary>
+  <pre><code>certutil -hashfile vectros-2026.10.10.1-x86_64.iso SHA256</code></pre>
+  <p class="meta">Compare the result with the SHA-256 above.</p></details>
+
+<h2 id="usb">Write it to a USB stick</h2>
+<p>Use a stick of 8 GB or more. Everything on it is erased.</p>
+<ul>
+  <li><a href="https://fedoraproject.org/workstation/download">Fedora Media Writer</a> (Windows, macOS, Linux): choose
+    <em>Select .iso file</em>, then the VectrOS ISO.</li>
+  <li><a href="https://rufus.ie">Rufus</a> (Windows): when asked, choose <em>DD Image mode</em>.</li>
+  <li><a href="https://etcher.balena.io">balenaEtcher</a> (Windows, macOS, Linux).</li>
+  <li>Linux terminal: <code>sudo dd if=vectros-2026.10.10.1-x86_64.iso of=/dev/sdX bs=4M status=progress oflag=sync</code>,
+    with <code>/dev/sdX</code> your USB stick.</li>
+</ul>
+
+<h2>Install</h2>
+<ol>
+  <li>Start the computer from the USB stick (often F12, F10 or Esc at power-on). VectrOS starts in UEFI mode.</li>
+  <li>Try the live desktop, then choose <strong>Install VectrOS</strong> in the launcher.</li>
+  <li>Pick the disk, name the computer, create your account, and choose whether to encrypt the disk.
+    The whole disk is erased; the install works offline.</li>
+</ol>
+
+<h3>What you need</h3>
+<ul>
+  <li>A 64-bit PC with UEFI, 8 GB of memory (16 GB for local AI models) and a disk of 20 GB or more.</li>
+  <li>Secure Boot off: the AIOS kernel module is not signed yet.</li>
+  <li>An internet connection for updates and to download AI models; the install itself needs none.</li>
+</ul>
+
+<h2>Mirrors</h2>
+<p>Files keep Fedora's layout, so a mirror can copy them as they are:
+  <code>releases/&lt;version&gt;/x86_64/iso/</code>. To run a mirror, open an issue in
+  <a href="https://github.com/vectros/download">vectros/download</a>.</p>
+
+
+<footer>
+  Installed systems update from the signed <a href="https://github.com/vectros/packages">[vectros] package repository</a>.
+  Signing key 6287 B50E 3F78 BA61 A4E2 8D19 6ADA AC27 044C C53D.
+</footer>
+</div>
+</body>
+</html>
