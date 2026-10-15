@@ -1,5 +1,28 @@
 [
   {
+    "version": "2026.10.15.1",
+    "date": "2026-10-15",
+    "iso": "vectros-2026.10.15.1-x86_64.iso",
+    "sha256": "7709cb258c87cf2d82aa978891649288fe01b4afa9fa726134c588fb3281f34c",
+    "size": 3114991616,
+    "checksum": "VectrOS-2026.10.15.1-x86_64-CHECKSUM",
+    "checksum_url": "https://github.com/vectros/download/releases/download/2026.10.15.1/VectrOS-2026.10.15.1-x86_64-CHECKSUM",
+    "notes": "https://github.com/vectros/download/releases/tag/2026.10.15.1",
+    "parts": [
+      {
+        "name": "vectros-2026.10.15.1-x86_64.iso.part00",
+        "url": "https://github.com/vectros/download/releases/download/2026.10.15.1/vectros-2026.10.15.1-x86_64.iso.part00",
+        "size": 1992294400
+      },
+      {
+        "name": "vectros-2026.10.15.1-x86_64.iso.part01",
+        "url": "https://github.com/vectros/download/releases/download/2026.10.15.1/vectros-2026.10.15.1-x86_64.iso.part01",
+        "size": 1122697216
+      }
+    ],
+    "mirrors": []
+  },
+  {
     "version": "2026.10.15",
     "date": "2026-10-15",
     "iso": "vectros-2026.10.15-x86_64.iso",
