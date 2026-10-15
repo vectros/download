@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/download/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#070d16" />
+    <script>
+      // Apply the stored theme before first paint; dark unless the reader chose light.
+      try {
+        if (localStorage.getItem("theme") !== "light") document.documentElement.classList.add("dark");
+      } catch (e) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+    <meta name="description" content="VectrOS is an Arch-based Linux distribution where AI agents are run by the kernel: AIOS schedules, limits and holds every model and tool call, and Aeris shows you all of it." />
+    <title>VectrOS: the kernel runs your AI agents</title>
+    <script type="module" crossorigin src="/download/assets/index-DcwQyIOO.js"></script>
+    <link rel="modulepreload" crossorigin href="/download/assets/jsx-runtime-D3jfb0Ew.js">
+    <link rel="modulepreload" crossorigin href="/download/assets/react-dom-DenslgJm.js">
+    <link rel="modulepreload" crossorigin href="/download/assets/content-DpeGmsb3.js">
+    <link rel="modulepreload" crossorigin href="/download/assets/dist-C_8TD0bO.js">
+    <link rel="stylesheet" crossorigin href="/download/assets/index-Dl8BzhxW.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
